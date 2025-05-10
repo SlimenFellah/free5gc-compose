@@ -1,0 +1,23 @@
+version: 1.0.3
+description: UPF2 - Intermediate
+
+pfcp:
+  addr: upf2.free5gc.org
+  nodeID: upf2.free5gc.org
+  retransTimeout: 1s
+  maxRetrans: 3
+
+gtpu:
+  forwarder: gtp5g
+  ifList:
+    - addr: upf2.free5gc.org
+      type: N9
+
+dnnList:
+  - dnn: internet
+    cidr: 10.61.0.0/16
+
+logger:
+  enable: true
+  level: info
+  reportCaller: false

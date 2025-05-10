@@ -1,0 +1,23 @@
+version: 1.0.3
+description: UPF1 - Edge
+
+pfcp:
+  addr: upf1.free5gc.org
+  nodeID: upf1.free5gc.org
+  retransTimeout: 1s
+  maxRetrans: 3
+
+gtpu:
+  forwarder: gtp5g
+  ifList:
+    - addr: upf1.free5gc.org
+      type: N3
+
+dnnList:
+  - dnn: internet
+    cidr: 10.60.0.0/16
+
+logger:
+  enable: true
+  level: info
+  reportCaller: false
