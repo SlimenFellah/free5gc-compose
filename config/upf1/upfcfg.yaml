@@ -1,4 +1,5 @@
-description: UPF1 - Entry Point
+version: 1.0.3
+description: UPF1 - gNB Entry Point
 
 pfcp:
   addr: upf1.free5gc.org
@@ -12,4 +13,9 @@ gtpu:
 
 dnnList:
   - dnn: urllc
-    cidr: 10.70.0.0/16
+    cidr: 10.80.0.0/16
+
+logger:
+  enable: true
+  level: info
+  reportCaller: false

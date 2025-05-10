@@ -1,4 +1,5 @@
-description: UPF4 - Application Server UPF
+version: 1.0.3
+description: UPF4 - URLLC Server-Side
 
 pfcp:
   addr: upf4.free5gc.org
@@ -12,4 +13,9 @@ gtpu:
 
 dnnList:
   - dnn: urllc
-    cidr: 10.73.0.0/16
+    cidr: 10.83.0.0/16
+
+logger:
+  enable: true
+  level: info
+  reportCaller: false

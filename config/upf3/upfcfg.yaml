@@ -1,4 +1,5 @@
-description: UPF3 - Mid Point 2
+version: 1.0.3
+description: UPF3 - Intermediate 2
 
 pfcp:
   addr: upf3.free5gc.org
@@ -12,4 +13,9 @@ gtpu:
 
 dnnList:
   - dnn: urllc
-    cidr: 10.72.0.0/16
+    cidr: 10.82.0.0/16
+
+logger:
+  enable: true
+  level: info
+  reportCaller: false
