@@ -1,11 +1,8 @@
-version: 1.0.3
-description: UPF3 - Core / Data Network
+description: UPF3 - Mid Point 2
 
 pfcp:
   addr: upf3.free5gc.org
   nodeID: upf3.free5gc.org
-  retransTimeout: 1s
-  maxRetrans: 3
 
 gtpu:
   forwarder: gtp5g
@@ -14,10 +11,5 @@ gtpu:
       type: N9
 
 dnnList:
-  - dnn: internet
-    cidr: 10.62.0.0/16
-
-logger:
-  enable: true
-  level: info
-  reportCaller: false
+  - dnn: urllc
+    cidr: 10.72.0.0/16

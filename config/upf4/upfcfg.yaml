@@ -1,0 +1,15 @@
+description: UPF4 - Application Server UPF
+
+pfcp:
+  addr: upf4.free5gc.org
+  nodeID: upf4.free5gc.org
+
+gtpu:
+  forwarder: gtp5g
+  ifList:
+    - addr: upf4.free5gc.org
+      type: N9
+
+dnnList:
+  - dnn: urllc
+    cidr: 10.73.0.0/16

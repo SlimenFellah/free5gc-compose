@@ -1,11 +1,8 @@
-version: 1.0.3
-description: UPF2 - Intermediate
+description: UPF2 - Mid Point 1
 
 pfcp:
   addr: upf2.free5gc.org
   nodeID: upf2.free5gc.org
-  retransTimeout: 1s
-  maxRetrans: 3
 
 gtpu:
   forwarder: gtp5g
@@ -14,10 +11,5 @@ gtpu:
       type: N9
 
 dnnList:
-  - dnn: internet
-    cidr: 10.61.0.0/16
-
-logger:
-  enable: true
-  level: info
-  reportCaller: false
+  - dnn: urllc
+    cidr: 10.71.0.0/16
